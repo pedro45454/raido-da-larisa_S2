@@ -1,124 +1,202 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>formulario de contratação radio phoenix <img src="phoenix.png" alt="Logo"> </title>
+    <title>Formulário de Contratação - Rádio Phoenix</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main>
-    <form action="https://formsubmit.co/rm5555971@gmail.com" method="POST">
-      <section>
-        <h1>Formulário de Contratação - Rádio Phoenix  <img src="phoenix.png" alt="Logo">  </h1><br>
-        <h1>Formulário de Contratação</h1><br>
-        <h2>Informações Pessoais</h2>
-      </section>
-      <section>
-        <input type="text" name="Pergunta: Nome completo" placeholder="nome que preferi ser chamado "><br>
-        <h2>você é masculino, feminino ou prefere não dizer?</h2>
-        <input type="radio" id="genero_masculino" name="Pergunta: Você é masculino, feminino ou prefere não dizer?" value="Masculino">
-        <label for="genero_masculino">Masculino</label><br>
-        <input type="radio" id="genero_feminino" name="Pergunta: Você é masculino, feminino ou prefere não dizer?" value="Feminino">
-        <label for="genero_feminino">Feminino</label><br>
-        <input type="radio" id="genero_nao_dizer" name="Pergunta: Você é masculino, feminino ou prefere não dizer?" value="Prefiro não dizer">
-        <label for="genero_nao_dizer">Prefiro não dizer</label><br><br>
-      
-        <h2>você ja trabalhava em alguma rádio antes?</h2>
+    <main>
+        <form action="https://formsubmit.co/rm5555971@gmail.com" method="POST">
+            <section class="header">
+                <h1>
+                    Formulário de Contratação - Rádio Phoenix 
+                    <img src="phoenix.png" alt="Logo Rádio Phoenix">
+                </h1>
+            </section>
 
-        <input type="radio" id="experiencia_sim" name="Pergunta: Você já trabalhava em alguma rádio antes?" value="Sim">
-        <label for="experiencia_sim">Sim</label><br>
-        <input type="radio" id="experiencia_nao" name="Pergunta: Você já trabalhava em alguma rádio antes?" value="Não"><br>
-    
+            <section class="personal-info">
+                <h2>Informações Pessoais</h2>
+                
+                <div class="form-group">
+                    <label for="nome_completo">Nome que prefere ser chamado:</label>
+                    <input type="text" id="nome_completo" name="Pergunta: Nome completo" placeholder="Digite seu nome" required>
+                </div>
 
-        <label for="experiencia_nao">Não</label><br><br>
-        <h2> se sim, em qual rádio trabalhou?</h2>
-        <input type="text" name="Pergunta: Se sim, em qual rádio trabalhou?" placeholder="Rádio Anterior"><br><br>
-      </section>
-      <section>
-        <h2>voce tem disponibilidade de horário de 19h as 23h?</h2>
-        <input type="radio" id="disponibilidade_sim" name="Pergunta: Você tem disponibilidade de horário de 19h as 23h?" value="Sim">
-        <label for="disponibilidade_sim">Sim</label><br>
-        <input type="radio" id="disponibilidade_nao" name="Pergunta: Você tem disponibilidade de horário de 19h as 23h?" value="Não">
-        <label for="disponibilidade_nao">Não</label><br><br>
-        <h2>se nao qual horário você tem disponibilidade?</h2>
-        <input type="text" name="Pergunta: Se não, qual horário você tem disponibilidade?" placeholder="Horário Disponível"><br><br>
-      </section>
-      <section>
-        <h2>você tem alguma experiência com rádio?</h2>
-        <input type="radio" id="experiencia_radio_sim" name="Pergunta: Você tem alguma experiência com rádio?" value="Sim">
-        <label for="experiencia_radio_sim">Sim</label><br>
-        <input type="radio" id="experiencia_radio_nao" name="Pergunta: Você tem alguma experiência com rádio?" value="Não">
-        <label for="experiencia_radio_nao">Não</label><br><br>
-        <h2>se sim, qual tipo de experiência você tem?</h2>
-        <input type="text" name="Pergunta: Se sim, qual tipo de experiência você tem?" placeholder="Tipo de Experiência"><br><br>
-        <h2>você pode ser locutor </h2>
-        <p>para locuta no mobile tem que ter 2 dipositivos para pc e 1 pc</p><br>
-        <input type="radio" id="locutor_sim" name="Pergunta: Você pode ser locutor?" value="Sim">
-        <label for="locutor_sim">Sim</label><br>
-        <input type="radio" id="locutor_nao" name="Pergunta: Você pode ser locutor?" value="Não">
-        <label for="locutor_nao">Não</label><br><br>
-        <h2>aluno  de lucução   </h2>
-        <p>para ser aluno de locução tem que ter 2 dipositivo (o aluno de locução nao  sabe locutar)
-        e se for pc tem que ter 1 pc</p><br>
-        <input type="radio" id="aluno_locucao_sim" name="Pergunta: Você quer ser aluno de locução?" value="Sim">
-        <label for="aluno_locucao_sim">Sim</label><br>
-        <input type="radio" id="aluno_locucao_nao" name="Pergunta: Você quer ser aluno de locução?" value="Não">
-        <label for="aluno_locucao_nao">Não</label><br><br>
-        <h2>suporte</h2>
-        <p>serve para jogar divugacao na sala e pode interagir(mobile)</p><br>
-        <input type="radio" id="suporte_sim" name="Pergunta: Você pode ser suporte?" value="Sim">
-        <label for="suporte_sim">Sim</label><br>
-        <input type="radio" id="suporte_nao" name="Pergunta: Você pode ser suporte?" value="Não">
-        <label for="suporte_nao">Não</label><br><br>
-        <h2>divogador </h2>
-        <p>serve para jogar divugacao na sala e pode interagir(pc)</p><br>
-        <input type="radio" id="divulgador_sim" name="Pergunta: Você pode ser divulgador?" value="Sim">
-        <label for="divulgador_sim">Sim</label><br>
-        <input type="radio" id="divulgador_nao" name="Pergunta: Você pode ser divulgador?" value="Não">
-        <label for="divulgador_nao">Não</label><br><br>
-        <H2>qual e seu nome do jogo  </H2>
-        <input type="text" name="Pergunta: Qual é seu nome no jogo?" id="nome  " placeholder="nome no jogo" ><Br>
-        <h2>qual e seu nivel no jogo</h2><Br>
-        <input type="text" name="Pergunta: Qual é seu nível no jogo?" id="pedro" placeholder="nivel do jogo">
-      </section>
-      <footer>
-           
+                <div class="form-group">
+                    <label>Gênero:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="genero_masculino" name="Pergunta: Você é masculino, feminino ou prefere não dizer?" value="Masculino" required>
+                        <label for="genero_masculino">Masculino</label>
+                        
+                        <input type="radio" id="genero_feminino" name="Pergunta: Você é masculino, feminino ou prefere não dizer?" value="Feminino">
+                        <label for="genero_feminino">Feminino</label>
+                        
+                        <input type="radio" id="genero_nao_dizer" name="Pergunta: Você é masculino, feminino ou prefere não dizer?" value="Prefiro não dizer">
+                        <label for="genero_nao_dizer">Prefiro não dizer</label>
+                    </div>
+                </div>
+            </section>
 
-                    <section id="regras-radio-phoenix" style="max-width: 800px; margin: 30px auto; background: #fff3e6; border-radius: 12px; box-shadow: 0 2px 8px #0001; padding: 32px 24px 24px 24px; font-family: Arial, sans-serif;">
-      <h1 style="color: #d2691e; text-align: center; margin-bottom: 16px;">📻 REGRAS RÁDIO PHOENIX</h1>
-      <div style="font-size: 1.05em; color: #333; text-align: justify;">
-        📍 NÃO PAGAMOS JOB. <br>
-        📍 Obrigatório ter Discord ou WhatsApp (preferencialmente ambos).<br>
-        📍 Obrigatório exibir nos status do jogo o cargo ocupado dentro da Rádio.<br>
-        📍 Esteja sempre atento aos comunicados do grupo de AVISOS IMPORTANTES. <br>
-        📍 PROIBIDO estar em outras salas durante o horário de evento da Rádio Fênix, por qualquer motivo. 🗓 <br>
-        📍 A rádio funciona nos dias: Segunda, Terça, Quarta e Quinta-feira. 🕣 <br>
-        📍 Horário de funcionamento: 19:00 às 23:00. <br>
-        📍 Temos lista de presença para ajudar na organização e saber quem realmente quer estar com a equipe Phoenix. <Br>
-        📍 Membros que saírem da rádio Phoenix e forem para outra rádio NÃO poderão retornar para a rádio Fênix. <br>
-        📍 Quando o evento for na sala de algum membro ou parceiro da rádio, o mesmo deve estar presente e dar job para toda Administração. Caso não possa estar presente, marcaremos outro dia. <br>
-        📍 A rádio funciona 4 dias na semana e folgamos 3! Faltas: 3 eventos sem comparecer ou justificar = remoção. <br>
-        📍 Teremos reunião a cada 15 dias. 5 reuniões sem comparecer = remoção.<br>
-        📍 PROIBIDO xingamentos, palavrões, winks all em sala da rádio!<Br> 
-        📍 Respeite para ser respeitado. Ouça para ser ouvido. Assim faremos uma equipe unida e tranquila! <br>
-        📍 Se você não concorda com essas regras, por gentileza, nem prossiga com sua contratação. As regras serão passadas antes de colocar a pessoa no grupo, dando o direito de recusar. <br><br>
-        <b>📢 Avisos para Locutores:</b> <br>
-        📍 🚫 PROIBIDO locutar em outras rádios. <br>
-        📍 Se o locutor quiser permanecer ao vivo, pode, mas a equipe será liberada. <br>
-        📍 PROIBIDO locutar sem placa de locutor. Obrigatório placa de locutor da rádio Phoenix. <br>
-        📍 Locutores devem avisar com antecedência se não puderem locutar nos dias em que estão na tabela. <br><br>
-        <span style="color: #d2691e; font-weight: bold;">📻 Radio Phoenix: a minha, a sua, a nossa rádio! SEJAM BEM-VINDOS (AS)!<br>     
-        <p>Obrigado por se candidatar à Rádio Phoenix! Entraremos em contato em breve. <br> </p>
+            <section class="availability">
+                <h2>Disponibilidade</h2>
+                
+                <div class="form-group">
+                    <label>Você tem disponibilidade de horário de 19h às 23h?</label>
+                    <div class="radio-group">
+                        <input type="radio" id="disponibilidade_sim" name="Pergunta: Você tem disponibilidade de horário de 19h as 23h?" value="Sim" required>
+                        <label for="disponibilidade_sim">Sim</label>
+                        
+                        <input type="radio" id="disponibilidade_nao" name="Pergunta: Você tem disponibilidade de horário de 19h as 23h?" value="Não">
+                        <label for="disponibilidade_nao">Não</label>
+                    </div>
+                </div>
 
-        <button type="submit">Enviar para contato</button>
-        <input type="hidden" name="_captcha" value="false">
-      
+                <div class="form-group">
+                    <label for="horario_disponivel">Se não, qual horário você tem disponibilidade?</label>
+                    <input type="text" id="horario_disponivel" name="Pergunta: Se não, qual horário você tem disponibilidade?" placeholder="Seu horário disponível">
+                </div>
+            </section>
 
-                  
-      </footer>
-    </form>
+            <section class="experience">
+                <h2>Experiência Profissional</h2>
+                
+                <div class="form-group">
+                    <label>Você já trabalhava em alguma rádio antes?</label>
+                    <div class="radio-group">
+                        <input type="radio" id="experiencia_sim" name="Pergunta: Você já trabalhava em alguma rádio antes?" value="Sim" required>
+                        <label for="experiencia_sim">Sim</label>
+                        
+                        <input type="radio" id="experiencia_nao" name="Pergunta: Você já trabalhava em alguma rádio antes?" value="Não">
+                        <label for="experiencia_nao">Não</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="radio_anterior">Se sim, em qual rádio trabalhou?</label>
+                    <input type="text" id="radio_anterior" name="Pergunta: Se sim, em qual rádio trabalhou?" placeholder="Nome da rádio anterior">
+                </div>
+            </section>
+
+            <section class="roles">
+                <h2>Cargos e Funções</h2>
+                
+                <div class="form-group">
+                    <label>Você tem alguma experiência com rádio?</label>
+                    <div class="radio-group">
+                        <input type="radio" id="experiencia_radio_sim" name="Pergunta: Você tem alguma experiência com rádio?" value="Sim" required>
+                        <label for="experiencia_radio_sim">Sim</label>
+                        
+                        <input type="radio" id="experiencia_radio_nao" name="Pergunta: Você tem alguma experiência com rádio?" value="Não">
+                        <label for="experiencia_radio_nao">Não</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="tipo_experiencia">Se sim, qual tipo de experiência você tem?</label>
+                    <input type="text" id="tipo_experiencia" name="Pergunta: Se sim, qual tipo de experiência você tem?" placeholder="Descreva sua experiência">
+                </div>
+
+                <div class="role-option">
+                    <h3>Locutor</h3>
+                    <p>Para locução no mobile precisa ter 2 dispositivos, para PC precisa ter 1 PC</p>
+                    <div class="radio-group">
+                        <input type="radio" id="locutor_sim" name="Pergunta: Você pode ser locutor?" value="Sim" required>
+                        <label for="locutor_sim">Sim</label>
+                        
+                        <input type="radio" id="locutor_nao" name="Pergunta: Você pode ser locutor?" value="Não">
+                        <label for="locutor_nao">Não</label>
+                    </div>
+                </div>
+
+                <div class="role-option">
+                    <h3>Aluno de Locução</h3>
+                    <p>Para ser aluno de locução precisa ter 2 dispositivos (o aluno não sabe locutar) e se for PC precisa ter 1 PC</p>
+                    <div class="radio-group">
+                        <input type="radio" id="aluno_locucao_sim" name="Pergunta: Você quer ser aluno de locução?" value="Sim" required>
+                        <label for="aluno_locucao_sim">Sim</label>
+                        
+                        <input type="radio" id="aluno_locucao_nao" name="Pergunta: Você quer ser aluno de locução?" value="Não">
+                        <label for="aluno_locucao_nao">Não</label>
+                    </div>
+                </div>
+
+                <div class="role-option">
+                    <h3>Suporte</h3>
+                    <p>Serve para jogar divulgação na sala e pode interagir (mobile)</p>
+                    <div class="radio-group">
+                        <input type="radio" id="suporte_sim" name="Pergunta: Você pode ser suporte?" value="Sim" required>
+                        <label for="suporte_sim">Sim</label>
+                        
+                        <input type="radio" id="suporte_nao" name="Pergunta: Você pode ser suporte?" value="Não">
+                        <label for="suporte_nao">Não</label>
+                    </div>
+                </div>
+
+                <div class="role-option">
+                    <h3>Divulgador</h3>
+                    <p>Serve para jogar divulgação na sala e pode interagir (PC)</p>
+                    <div class="radio-group">
+                        <input type="radio" id="divulgador_sim" name="Pergunta: Você pode ser divulgador?" value="Sim" required>
+                        <label for="divulgador_sim">Sim</label>
+                        
+                        <input type="radio" id="divulgador_nao" name="Pergunta: Você pode ser divulgador?" value="Não">
+                        <label for="divulgador_nao">Não</label>
+                    </div>
+                </div>
+            </section>
+
+            <section class="game-info">
+                <h2>Informações do Jogo</h2>
+                
+                <div class="form-group">
+                    <label for="nome_jogo">Qual é seu nome no jogo?</label>
+                    <input type="text" id="nome_jogo" name="Pergunta: Qual é seu nome no jogo?" placeholder="Seu nome no jogo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="nivel_jogo">Qual é seu nível no jogo?</label>
+                    <input type="text" id="nivel_jogo" name="Pergunta: Qual é seu nível no jogo?" placeholder="Seu nível no jogo" required>
+                </div>
+            </section>
+
+            <footer>
+                <section id="regras-radio-phoenix">
+                    <h2>📻 REGRAS RÁDIO PHOENIX</h2>
+                    <div class="regras-content">
+                        <p>📍 NÃO PAGAMOS JOB.</p>
+                        <p>📍 Obrigatório ter Discord ou WhatsApp (preferencialmente ambos).</p>
+                        <p>📍 Obrigatório exibir nos status do jogo o cargo ocupado dentro da Rádio.</p>
+                        <p>📍 Esteja sempre atento aos comunicados do grupo de AVISOS IMPORTANTES.</p>
+                        <p>📍 PROIBIDO estar em outras salas durante o horário de evento da Rádio Fênix, por qualquer motivo. 🗓</p>
+                        <p>📍 A rádio funciona nos dias: Segunda, Terça, Quarta e Quinta-feira. 🕣</p>
+                        <p>📍 Horário de funcionamento: 19:00 às 23:00.</p>
+                        <p>📍 Temos lista de presença para ajudar na organização e saber quem realmente quer estar com a equipe Phoenix.</p>
+                        <p>📍 Membros que saírem da rádio Phoenix e forem para outra rádio NÃO poderão retornar para a rádio Fênix.</p>
+                        <p>📍 Quando o evento for na sala de algum membro ou parceiro da rádio, o mesmo deve estar presente e dar job para toda Administração. Caso não possa estar presente, marcaremos outro dia.</p>
+                        <p>📍 A rádio funciona 4 dias na semana e folgamos 3! Faltas: 3 eventos sem comparecer ou justificar = remoção.</p>
+                        <p>📍 Teremos reunião a cada 15 dias. 5 reuniões sem comparecer = remoção.</p>
+                        <p>📍 PROIBIDO xingamentos, palavrões, winks all em sala da rádio!</p>
+                        <p>📍 Respeite para ser respeitado. Ouça para ser ouvido. Assim faremos uma equipe unida e tranquila!</p>
+                        <p>📍 Se você não concorda com essas regras, por gentileza, nem prossiga com sua contratação. As regras serão passadas antes de colocar a pessoa no grupo, dando o direito de recusar.</p>
+                        
+                        <h3>📢 Avisos para Locutores:</h3>
+                        <p>📍 🚫 PROIBIDO locutar em outras rádios.</p>
+                        <p>📍 Se o locutor quiser permanecer ao vivo, pode, mas a equipe será liberada.</p>
+                        <p>📍 PROIBIDO locutar sem placa de locutor. Obrigatório placa de locutor da rádio Phoenix.</p>
+                        <p>📍 Locutores devem avisar com antecedência se não puderem locutar nos dias em que estão na tabela.</p>
+                        
+                        <p class="destaque">📻 Radio Phoenix: a minha, a sua, a nossa rádio! SEJAM BEM-VINDOS (AS)!</p>
+                        <p>Obrigado por se candidatar à Rádio Phoenix! Entraremos em contato em breve.</p>
+                    </div>
+
+                    <button type="submit">Enviar para contato</button>
+                    <input type="hidden" name="_captcha" value="false">
+                </section>
+            </footer>
+        </form>
             
-  </main>
+    </main>
 </body>
 </html>
