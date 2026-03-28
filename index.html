@@ -15,63 +15,72 @@
         <h2>Informações Pessoais</h2>
       </section>
       <section>
-        <input type="text" name="nome_completo" placeholder="nome que preferi ser chamado " required><br>
-        <h2>voce e masculino feminino ou prefere nao diser </h2>
-        <input type="text"id="tal como se chama"placeholder="voce e masculino feminino ou prefere nao diser"><br>
+        <input type="text" name="Pergunta: Nome completo" placeholder="nome que preferi ser chamado "><br>
+        <h2>você é masculino, feminino ou prefere não dizer?</h2>
+        <input type="radio" id="genero_masculino" name="Pergunta: Você é masculino, feminino ou prefere não dizer?" value="Masculino">
+        <label for="genero_masculino">Masculino</label><br>
+        <input type="radio" id="genero_feminino" name="Pergunta: Você é masculino, feminino ou prefere não dizer?" value="Feminino">
+        <label for="genero_feminino">Feminino</label><br>
+        <input type="radio" id="genero_nao_dizer" name="Pergunta: Você é masculino, feminino ou prefere não dizer?" value="Prefiro não dizer">
+        <label for="genero_nao_dizer">Prefiro não dizer</label><br><br>
+      
         <h2>você ja trabalhava em alguma rádio antes?</h2>
-        <input type="radio" id="experiencia_sim" name="experiencia" value="Sim">
+
+        <input type="radio" id="experiencia_sim" name="Pergunta: Você já trabalhava em alguma rádio antes?" value="Sim">
         <label for="experiencia_sim">Sim</label><br>
-        <input type="radio" id="experiencia_nao" name="experiencia" value="Não">
+        <input type="radio" id="experiencia_nao" name="Pergunta: Você já trabalhava em alguma rádio antes?" value="Não"><br>
+    
+
         <label for="experiencia_nao">Não</label><br><br>
         <h2> se sim, em qual rádio trabalhou?</h2>
-        <input type="text" name="radio_anterior" placeholder="Rádio Anterior"><br><br>
+        <input type="text" name="Pergunta: Se sim, em qual rádio trabalhou?" placeholder="Rádio Anterior"><br><br>
       </section>
       <section>
         <h2>voce tem disponibilidade de horário de 19h as 23h?</h2>
-        <input type="radio" id="disponibilidade_sim" name="disponibilidade" value="Sim">
+        <input type="radio" id="disponibilidade_sim" name="Pergunta: Você tem disponibilidade de horário de 19h as 23h?" value="Sim">
         <label for="disponibilidade_sim">Sim</label><br>
-        <input type="radio" id="disponibilidade_nao" name="disponibilidade" value="Não">
+        <input type="radio" id="disponibilidade_nao" name="Pergunta: Você tem disponibilidade de horário de 19h as 23h?" value="Não">
         <label for="disponibilidade_nao">Não</label><br><br>
         <h2>se nao qual horário você tem disponibilidade?</h2>
-        <input type="text" name="horario_disponivel" placeholder="Horário Disponível"><br><br>
+        <input type="text" name="Pergunta: Se não, qual horário você tem disponibilidade?" placeholder="Horário Disponível"><br><br>
       </section>
       <section>
         <h2>você tem alguma experiência com rádio?</h2>
-        <input type="radio" id="experiencia_radio_sim" name="experiencia_radio" value="Sim">
+        <input type="radio" id="experiencia_radio_sim" name="Pergunta: Você tem alguma experiência com rádio?" value="Sim">
         <label for="experiencia_radio_sim">Sim</label><br>
-        <input type="radio" id="experiencia_radio_nao" name="experiencia_radio" value="Não">
+        <input type="radio" id="experiencia_radio_nao" name="Pergunta: Você tem alguma experiência com rádio?" value="Não">
         <label for="experiencia_radio_nao">Não</label><br><br>
         <h2>se sim, qual tipo de experiência você tem?</h2>
-        <input type="text" name="tipo_experiencia" placeholder="Tipo de Experiência"><br><br>
+        <input type="text" name="Pergunta: Se sim, qual tipo de experiência você tem?" placeholder="Tipo de Experiência"><br><br>
         <h2>você pode ser locutor </h2>
         <p>para locuta no mobile tem que ter 2 dipositivos para pc e 1 pc</p><br>
-        <input type="radio" id="locutor_sim" name="locutor" value="Sim">
+        <input type="radio" id="locutor_sim" name="Pergunta: Você pode ser locutor?" value="Sim">
         <label for="locutor_sim">Sim</label><br>
-        <input type="radio" id="locutor_nao" name="locutor" value="Não">
+        <input type="radio" id="locutor_nao" name="Pergunta: Você pode ser locutor?" value="Não">
         <label for="locutor_nao">Não</label><br><br>
         <h2>aluno  de lucução   </h2>
         <p>para ser aluno de locução tem que ter 2 dipositivo (o aluno de locução nao  sabe locutar)
         e se for pc tem que ter 1 pc</p><br>
-        <input type="radio" id="aluno_locucao_sim" name="aluno_locucao" value="Sim">
+        <input type="radio" id="aluno_locucao_sim" name="Pergunta: Você quer ser aluno de locução?" value="Sim">
         <label for="aluno_locucao_sim">Sim</label><br>
-        <input type="radio" id="aluno_locucao_nao" name="aluno_locucao" value="Não">
+        <input type="radio" id="aluno_locucao_nao" name="Pergunta: Você quer ser aluno de locução?" value="Não">
         <label for="aluno_locucao_nao">Não</label><br><br>
         <h2>suporte</h2>
         <p>serve para jogar divugacao na sala e pode interagir(mobile)</p><br>
-        <input type="radio" id="suporte_sim" name="suporte" value="Sim">
+        <input type="radio" id="suporte_sim" name="Pergunta: Você pode ser suporte?" value="Sim">
         <label for="suporte_sim">Sim</label><br>
-        <input type="radio" id="suporte_nao" name="suporte" value="Não">
+        <input type="radio" id="suporte_nao" name="Pergunta: Você pode ser suporte?" value="Não">
         <label for="suporte_nao">Não</label><br><br>
         <h2>divogador </h2>
         <p>serve para jogar divugacao na sala e pode interagir(pc)</p><br>
-        <input type="radio" id="divulgador_sim" name="divulgador" value="Sim">
+        <input type="radio" id="divulgador_sim" name="Pergunta: Você pode ser divulgador?" value="Sim">
         <label for="divulgador_sim">Sim</label><br>
-        <input type="radio" id="divulgador_nao" name="divulgador" value="Não">
+        <input type="radio" id="divulgador_nao" name="Pergunta: Você pode ser divulgador?" value="Não">
         <label for="divulgador_nao">Não</label><br><br>
         <H2>qual e seu nome do jogo  </H2>
-        <input type="text" id="nome  " placeholder="nome no jogo" ><Br>
+        <input type="text" name="Pergunta: Qual é seu nome no jogo?" id="nome  " placeholder="nome no jogo" ><Br>
         <h2>qual e seu nivel no jogo</h2><Br>
-        <input type="text"id="pedro" placeholder="nivel do jogo">
+        <input type="text" name="Pergunta: Qual é seu nível no jogo?" id="pedro" placeholder="nivel do jogo">
       </section>
       <footer>
            
@@ -105,6 +114,7 @@
         <button type="submit">Enviar para contato</button>
         <input type="hidden" name="_captcha" value="false">
       
+
                   
       </footer>
     </form>
