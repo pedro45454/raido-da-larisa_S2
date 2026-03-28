@@ -5,6 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Contratação - Rádio Phoenix</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .concordancia-section {
+            background: #fff9e6;
+            border: 2px solid #ffd700;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 8px rgba(255, 215, 0, 0.2);
+        }
+        
+        .concordancia-section h3 {
+            color: #d2691e;
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        
+        .concordancia-section .radio-group {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        
+        .concordancia-section input[type="radio"] {
+            margin-right: 8px;
+        }
+        
+        .concordancia-section label {
+            cursor: pointer;
+            font-weight: 500;
+        }
+        
+        #div_discordancia {
+            margin-top: 15px;
+            padding: 15px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        
+        #discordancia_texto {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            resize: vertical;
+            min-height: 80px;
+        }
+        
+        #discordancia_texto:focus {
+            outline: none;
+            border-color: #d2691e;
+            box-shadow: 0 0 5px rgba(210, 105, 30, 0.3);
+        }
+        
+        button[type="submit"] {
+            background: linear-gradient(135deg, #d2691e, #ff8c00);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(210, 105, 30, 0.3);
+            display: block;
+            margin: 20px auto;
+        }
+        
+        button[type="submit"]:hover {
+            background: linear-gradient(135deg, #ff8c00, #d2691e);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(210, 105, 30, 0.4);
+        }
+        
+        button[type="submit"]:active {
+            transform: translateY(0);
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const concordaSim = document.getElementById('concorda_sim');
+            const concordaNao = document.getElementById('concorda_nao');
+            const divDiscordancia = document.getElementById('div_discordancia');
+            const discordanciaTexto = document.getElementById('discordancia_texto');
+            
+            function toggleDiscordancia() {
+                if (concordaNao && concordaNao.checked) {
+                    divDiscordancia.style.display = 'block';
+                    discordanciaTexto.required = true;
+                } else {
+                    divDiscordancia.style.display = 'none';
+                    discordanciaTexto.required = false;
+                    discordanciaTexto.value = '';
+                }
+            }
+            
+            if (concordaSim) concordaSim.addEventListener('change', toggleDiscordancia);
+            if (concordaNao) concordaNao.addEventListener('change', toggleDiscordancia);
+        });
+    </script>
 </head>
 <body>
     <main>
@@ -34,13 +139,17 @@
                         <label for="genero_feminino">Feminino</label>
                         
                         <input type="radio" id="genero_nao_dizer" name="Pergunta: Você é masculino, feminino ou prefere não dizer?" value="Prefiro não dizer">
+                       
                         <label for="genero_nao_dizer">Prefiro não dizer</label><br><br>
                     </div>
                 </div>
 
                 <div class="form-group">
+                    <input type="text" id="numero" name="numero" style="display: none;">
                     <label for="meios_comunicacao">Por onde podemos nos comunicar com você?</label><br>
                     <input type="text" id="meios_comunicacao" name="Pergunta: Por onde podemos nos comunicar com você?" placeholder="Ex: WhatsApp, Telegram, Discord, Instagram, etc." required><br>
+                    <label for="numero">Número de whatsapp ou nik de instagram</label><br>
+                    <input type="text" id="numero" name="numero" placeholder="Ex: 123456789" required><br>
                 </div>
             </section>
 
@@ -194,6 +303,22 @@
                         
                         <p class="destaque">📻 Rádio Phoenix: a minha, a sua, a nossa rádio! SEJAM BEM-VINDOS (AS)!</p>
                         <p>Obrigado por se candidatar à Rádio Phoenix! Entraremos em contato em breve.</p>
+                    </div>
+
+                    <div class="concordancia-section">
+                        <h3>Você concorda com todas as regras acima?</h3>
+                        <div class="radio-group">
+                            <input type="radio" id="concorda_sim" name="concordancia_regras" value="Sim" required>
+                            <label for="concorda_sim">Sim, concordo com todas as regras</label>
+                            
+                            <input type="radio" id="concorda_nao" name="concordancia_regras" value="Não">
+                            <label for="concorda_nao">Não, discordo de alguma regra</label>
+                        </div>
+                        
+                        <div id="div_discordancia" style="display: none;">
+                            <label for="discordancia_texto">Por favor, informe qual regra você não concorda e sugestão de melhoria:</label>
+                            <textarea id="discordancia_texto" name="Pergunta: Qual regra você não concorda e sugestão de melhoria?" rows="4" placeholder="Ex: Não concordo com a regra X porque... Sugiro que..."></textarea>
+                        </div>
                     </div>
 
                     <button type="submit">Enviar para contato</button>
